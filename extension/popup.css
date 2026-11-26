@@ -1,0 +1,250 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 420px;
+  padding: 16px;
+  margin: 0;
+  background: #f7f7f8;
+  color: #222;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#readJob,
+#analyzeButton {
+  background: #222;
+  color: white;
+}
+
+#jobText {
+  max-height: 180px;
+  overflow-y: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+#analysisResults {
+  margin-top: 15px;
+}
+
+.requirement-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.requirement-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.requirement-title {
+  font-weight: 600;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 7px;
+  border-radius: 5px;
+}
+
+.match {
+  background: #e8f5e9;
+}
+
+.gap {
+  background: #fff3e0;
+}
+
+.evidence-label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-top: 12px;
+}
+
+.evidence {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.gap-warning {
+  font-size: 12px;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+#letterText {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.job-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.job-actions button {
+  flex: 1;
+}
+
+.secondary-button {
+  background: #e9e9ec;
+  color: #222;
+}
+
+.manual-job-section {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.manual-job-section input,
+.manual-job-section textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.manual-job-section textarea {
+  resize: vertical;
+}
+
+.job-details {
+  margin: 10px 0 16px;
+}
+
+.job-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#jobTitle {
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+#jobText {
+  max-height: 180px;
+  overflow-y: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* ===== Final UI Polish ===== */
+
+body {
+  width: 420px;
+  padding: 18px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+/* Dividers between main sections */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
+}
+
+/* Inputs */
+select,
+input[type="file"] {
+  margin-top: 5px;
+}
+
+select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+}
+
+/* Main analyze button */
+#analyzeButton {
+  width: 100%;
+  margin-top: 14px;
+  padding: 11px;
+}
+
+/* Disabled/loading state */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status messages */
+#resumeStatus,
+#analyzeStatus {
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+/* Letter area */
+#letterSection {
+  margin-top: 20px;
+  padding-top: 4px;
+}
+
+#letterText {
+  min-height: 260px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Letter action buttons */
+.letter-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.letter-actions button {
+  flex: 1;
+  font-size: 12px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Fit Letter</title>
+</head>
+<body>
+    <h1>Fit Letter</h1>
+
+    <div class="job-actions">
+        <button id="readJob">Read Job Posting</button>
+        <button id="manualJobButton" class="secondary-button">
+            Enter Manually
+        </button>
+        </div>
+
+        <div id="manualJobSection" class="manual-job-section" style="display: none;">
+        <input
+            id="manualJobTitle"
+            type="text"
+            placeholder="Job title"
+        >
+
+        <textarea
+            id="manualJobDescription"
+            rows="6"
+            placeholder="Paste the job description..."
+        ></textarea>
+
+        <button id="saveManualJob">
+            Use This Job
+        </button>
+    </div>
+
+    <h3>Job Title</h3>
+    <div id="jobTitle">
+    Not detected yet.
+    </div>
+
+    <details class="job-details">
+        <summary>View Job Description</summary>
+
+        <div id="jobText">
+            Open a job posting and click the button.
+        </div>
+    </details>
+
+    <hr>
+
+    <h3>Your Resume</h3>
+
+    <input type="file" id="resumeUpload" accept=".pdf,.docx">
+    <p id="resumeStatus">
+    No resume uploaded.
+    </p>
+
+
+    <hr>
+
+    <h3>Letter Options</h3>
+
+    <label for="tone">Tone:</label>
+    <select id="tone">
+        <option value="professional">Professional</option>
+        <option value="warm">Warm</option>
+        <option value="concise">Concise</option>
+    </select>
+
+    <br><br>
+
+    <label for="length">Length:</label>
+    <select id="length">
+        <option value="short">Short</option>
+        <option value="medium" selected>Medium</option>
+        <option value="long">Long</option>
+    </select>
+
+    <br><br>
+
+    <button id="analyzeButton">
+    Analyze Fit
+    </button>
+
+    <p id="analyzeStatus"></p>
+    <div id="analysisResults"></div>
+
+    <div id="letterSection" style="display: none;">
+        <h3>Cover Letter</h3>
+        <textarea id="letterText" rows="15"></textarea>
+        <div class="letter-actions">
+        <button id="regenerateLetter">Regenerate</button>
+        <button id="copyLetter">Copy</button>
+        <button id="downloadLetter">Download PDF</button>
+        </div>
+    </div>
+    <script src="lib/jspdf.umd.min.js"></script>
+    <script type="module" src="popup.js"></script>
+</body>
+</html>
